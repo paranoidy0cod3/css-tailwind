@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind-Css</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+</head>
+<body class="bg-slate-900">
+    <!-- header and nav start -->
+    <header class="w-full bg-slate-900 border-b-[1px] flex justify-between items-center px-6 py-4">
+        <div class="brand flex items-center gap-4">
+            <div class="max-w-8">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/768px-Tailwind_CSS_Logo.svg.png?20230715030042" alt="tailwind logo">
+            </div>
+            <div>
+                <h1 class="text-white text-xl">tailwindcss</h1>
+            </div>
+            <div>
+                <select name="versions" id="versions" class="rounded-xl bg-slate-600 text-slate-400 p-[2px] text-center">
+                    <option value="2.5">v2.2.5</option>
+                    <option value="3.5">v3.2.5</option>
+                    <option value="4.5">v4.4.1</option>
+                </select>
+            </div>
+        </div>
+        <nav class="flex w-1/3 justify-between">
+            <ul class="hidden md:flex justify-between text-white gap-4 text-lg ">
+                <li class="hover:text-blue-500"><a href="#">Docs</a></li>
+                <li class="hover:text-blue-500"><a href="#">Components</a></li>
+                <li class="hover:text-blue-500"><a href="#">Blog</a></li>
+                <li class="hover:text-blue-500"><a href="#">Showcase</a></li>                
+            </ul>
+            <div class="hidden top-links md:flex text-slate-400 text-xl border-l-[1px] border-slate-400">
+                <div class="mx-4" >
+                    <i class="fa-brands fa-affiliatetheme"></i>
+                    <ul class="hidden ">
+                        <li>Light</li>
+                        <li>Dark</li>
+                        <li>System</li>                        
+                    </ul>
+                </div>
+                <div class="github">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+            <div class="top-icons">
+                <i class="fa-solid fa-magnifying-glass mx-4"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- header and nav end -->
+
+    <!-- header hero section -->
+    <section class="max-w-5xl mx-auto pt-40">
+        <div >
+            <h1 class="text-white text-xl leading-6 text-center font-extrabold md:text-6xl">Rapidly build modern websites without ever leaving your HTML.</h1>
+        </div>
+        <div class="max-w-3xl mt-10 text-center mx-auto text-slate-500 text-xl">
+            <p>A utility-first CSS framework packed with classes like <span class="highlight">flex</span>,<span class="highlight">pt-4</span>, <span class="highlight">text-center</span> and <span class="highlight">rotate-90</span> that can be composed to build any design, directly in your markup.
+            </p>
+        </div>
+        <div class="btn-wrapper-heading flex justify-center items-end mt-10 gap-4">
+            <button class="btn-primary">Get Started</button>
+            <button type="button" class="md:flex gap-4 bg-slate-600 px-6 py-2 rounded-md hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+              <span class="text-white">Quick Search...</span>
+              <span>Ctrl K</span>
+              </button>
+        </div>        
+    </section>
+    <!-- header hero section end -->
+
+    <!-- code block start -->
+    <section class="mt-20 md:flex md:justify-center md:items-center ">
+        <div class="px-4 max-w-2xl">
+            <div class="card-wrapper bg-slate-800 m-auto rounded-md p-8 md:flex md:items-center md:gap-4 md:mr-[-90px] md:relative">
+                <div class="card-img rounded-full h-20 w-20 overflow-hidden mx-auto md:w-auto md:h-auto md:rounded-none">
+                    <img src="https://tailwindcss.com/_next/static/media/sarah-dayan.de9b3815.jpg" alt="">
+                </div>
+                <div class="card-content mt-6 text-center">
+                    <h3 class="text-slate-300 text-lg">
+                        " Tailwind CSS is the only framework that i've seen scale on large teams. It's easy to customize, adapts to an design, and the buil size is tiny. "
+                    </h3>
+                    <h5 class="text-sky-400 font-bold mt-4">Sarah Dayan</h5>
+                    <p class="text-slate-400 text-lg">Staff Engineer, Algolia</p>
+                </div>
+            </div>
+        </div>
+        <div class="code-block p-4">
+            <embed class="w-[36rem] h-[25rem] overflow-hidden" src="./code-snippet.html" type="">
+            
+        </div>
+        
+    </section>
+    <!-- code block start -->
+    <!-- testimonial start -->
+    <section class="mt-20 text-center">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-white text-xl md:text-5xl md:font-extrabold">“Best practices” don’t actually work.</h2>
+        </div>
+        <div class="max-w-3xl mx-auto mt-10 text-lg">
+            <p class="text-slate-500">I’ve written <span class="highlight">a few thousand words</span> on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you ever worked with CSS any other way.</p>
+        </div>
+        <div class="max-w-2xl mx-auto mt-10 flex justify-center items-center gap-4">
+            <div class="h-20 w-20 overflow-hidden rounded-full">
+                <img src="https://tailwindcss.com/_next/static/media/adam.26d0119c.jpg" alt="">
+            </div>
+            <div>
+                <h5 class="text-lg font-bold text-slate-300">Adam Wathan</h5>
+                <p class="text-slate-500">Creator of Tailwind CSS</p>
+            </div>
+        </div>
+        <!-- grid card items goes here -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-20 gap-4 sm:gap-6 md:gap-8 px-6">
+            <div class="bg-slate-800 rounded-md p-2">
+                <div class="max-w-2xl mx-auto mt-10 flex justify-center items-center gap-4">
+                    <div class="h-20 w-20 overflow-hidden rounded-full">
+                        <img src="https://tailwindcss.com/_next/static/media/ryan-florence.3af9c9d9.jpg
+                        " alt="">
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold text-slate-300">Ryan Florence</h5>
+                        <p class="text-slate-500">Remix & React Training</p>
+                    </div>
+                </div>
+                <blockquote class="p-4">
+                    <p class="text-slate-300">I feel like an idiot for not using Tailwind CSS until now.</p>
+                </blockquote>
+            </div>
+            
+            <div class="bg-slate-800 rounded-md p-2">
+                <div class="max-w-2xl mx-auto mt-10 flex justify-center items-center gap-4">
+                    <div class="h-20 w-20 overflow-hidden rounded-full">
+                        <img src="https://tailwindcss.com/_next/static/media/debbie-obrien.69d3104d.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold text-slate-300">Debbie O'Brien</h5>
+                        <p class="text-slate-500">Senior Program Manager</p>
+                    </div>
+                </div>
+                <blockquote class="p-4">
+                    <p class="text-slate-300">Have been working with CSS for over ten years and Tailwind just makes my life easier. It is still CSS and you use flex, grid, etc. but just quicker to write and maintain.</p>
+                </blockquote>
+            </div>
+            <div class="bg-slate-800 rounded-md p-2">
+                <div class="max-w-2xl mx-auto mt-10 flex justify-center items-center gap-4">
+                    <div class="h-20 w-20 overflow-hidden rounded-full">
+                        <img src="	https://tailwindcss.com/_next/static/media/kentcdodds.90894efe.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold text-slate-300">Kent C. Dodds</h5>
+                        <p class="text-slate-500">Developer and Educator</p>
+                    </div>
+                </div>
+                <blockquote class="p-4">
+                    <p class="text-slate-300">Skip to the end. Use @tailwindcss.</p>
+                </blockquote>
+            </div>
+            <div class="bg-slate-800 rounded-md p-2">
+                <div class="max-w-2xl mx-auto mt-10 flex justify-center items-center gap-4">
+                    <div class="h-20 w-20 overflow-hidden rounded-full">
+                        <img src="https://tailwindcss.com/_next/static/media/guillermo-rauch.8a24ab88.jpg" alt="">
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold text-slate-300">Guillermo Rauch</h5>
+                        <p class="text-slate-500">Vercel</p>
+                    </div>
+                </div>
+                <blockquote class="p-4">
+                    <p class="text-slate-300">If I had to recommend a way of getting into programming today, it would be HTML + CSS with Tailwind CSS.</p>
+                </blockquote>
+            </div>
+            <div class="bg-slate-800 rounded-md p-2">
+                <div class="max-w-2xl mx-auto mt-10 flex justify-center items-center gap-4">
+                    <div class="h-20 w-20 overflow-hidden rounded-full">
+                        <img src="	https://tailwindcss.com/_next/static/media/frontendben.7c4b54bd.jpg
+                        " alt="">
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold text-slate-300">Ben Furfie</h5>
+                        <p class="text-slate-500">Developer</p>
+                    </div>
+                </div>
+                <blockquote class="p-4">
+                    <p class="text-slate-300">I’ve been writing CSS for over 20 years, and up until 2017, the way I wrote it changed frequently. It’s not a coincidence Tailwind was released the same year. It might look wrong, but spend time with it and you’ll realize semantic CSS was a 20 year mistake.</p>
+                </blockquote>
+            </div>
+            <div class="bg-slate-800 rounded-md p-2">
+                <div class="max-w-2xl mx-auto mt-10 flex justify-center items-center gap-4">
+                    <div class="h-20 w-20 overflow-hidden rounded-full">
+                        <img src="	https://tailwindcss.com/_next/static/media/shrutibalasa.8c3514ba.jpg
+                        " alt="">
+                    </div>
+                    <div>
+                        <h5 class="text-lg font-bold text-slate-300">Shruti Balbasa</h5>
+                        <p class="text-slate-500">FullStack Developer</p>
+                    </div>
+                </div>
+                <blockquote class="p-4">
+                    <p class="text-slate-300">I was bad at front-end until I discovered Tailwind CSS. I have learnt a lot more about design and CSS itself after I started working with Tailwind. Creating web pages is 5x faster now.</p>
+                </blockquote>
+            </div>
+        </div>
+        <button class="bg-slate-500 py-2 px-4 mt-[-40px] text-white text-center mx-auto">Show more...</button>
+
+    </section>
+    <!-- testimonial end -->
+
+    <!-- Constraint-based start -->
+    <section class="mt-10 px-8">
+        <div class="w-20 h-20 overflow-hidden rounded-full">
+            <img src="	https://tailwindcss.com/_next/static/media/constraint-based.90d79a51.png" alt="">
+        </div>
+        <h5 class="text-lg text-indigo-500 my-5 font-bold">Constraint-based</h5>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl text-white font-extrabold">An API for your design system.</h2>
+        <p class="text-lg text-slate-400 max-w-3xl my-5">Utility classes help you work within the constraints of a system instead of littering your stylesheets with arbitrary values. They make it easy to be consistent with color choices, spacing, typography, shadows, and everything else that makes up a well-engineered design system.</p>
+        <button class="bg-slate-500 text-white text-lg rounded-lg py-2 px-4">Learn more  <span class="text-right"> > </span></button>
+
+        <div class="max-w-lg flex my-10">
+            <button type="button" class="group text-sm font-semibold w-full flex flex-col items-center text-indigo-600 dark:text-indigo-400"><svg width="48" height="48" fill="none" aria-hidden="true" class="mb-6 text-indigo-500 dark:text-indigo-400"><rect x="5" y="5" width="28" height="28" rx="4" fill="currentColor" fill-opacity=".1" stroke="currentColor" stroke-width="2"></rect><path d="M5 41h28M33 39v4M5 39v4M39 5h4M39 33h4M41 33V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Sizing</button>
+
+            <button type="button" class="group text-sm font-semibold w-full flex flex-col items-center ">
+                <svg width="48" height="48" fill="none" aria-hidden="true" class="mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500"><path d="M17.687 42.22 40.57 29.219a4 4 0 0 0 1.554-5.36L39 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M27.477 7.121a1 1 0 1 0-.954 1.758l.954-1.758Zm5.209 3.966.477-.879-.477.88Zm1.555 5.515-.866-.5-.003.006.87.494ZM26.523 8.88l5.686 3.087.954-1.758-5.686-3.087-.954 1.758Zm6.849 7.23-12.616 22.21 1.738.987 12.617-22.21-1.74-.988Zm-1.163-4.143a3 3 0 0 1 1.166 4.136l1.732 1a5 5 0 0 0-1.944-6.894l-.954 1.758Z" fill="currentColor"></path><path d="M5 9a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v25a9 9 0 1 1-18 0V9Z" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="2"></path><circle cx="14" cy="34" r="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></circle></svg><p class="text-lg text-slate-300">Colors</p></button>
+
+            <button type="button" class="group text-sm font-semibold w-full flex flex-col items-center "><svg width="48" height="48" fill="none" aria-hidden="true" class="mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500"><path d="M5 13a8 8 0 0 1 8-8h22a8 8 0 0 1 8 8v22a8 8 0 0 1-8 8H13a8 8 0 0 1-8-8V13Z" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="2"></path><path d="M15.5 25h9M13 31l5.145-12.748c.674-1.67 3.036-1.67 3.71 0L27 31" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M31 13s2 0 2 1.833v18.334C33 35 31 35 31 35M35 13s-2 0-2 1.833v18.334C33 35 35 35 35 35M31 24h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg><p class="text-lg text-slate-300">Typography</p></button>
+
+            <button type="button" class="group text-sm font-semibold w-full flex flex-col items-center "><svg width="48" height="48" fill="none" aria-hidden="true" class="mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500"><path d="M24 43c10.493 0 19-8.507 19-19S34.493 5 24 5m-4 .422C11.427 7.259 5 14.879 5 24c0 9.121 6.427 16.741 15 18.578" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M24 42.819V5.181c0-.1.081-.181.181-.181C34.574 5 43 13.607 43 24c0 10.394-8.426 19-18.819 19a.181.181 0 0 1-.181-.181Z" fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><path d="M28 10h3M28 14h7M28 18h10M28 22h11M28 26h10M28 30h9M28 34h7M28 38h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg><p class="text-lg text-slate-300">Shadows</p></button>
+        </div>
+    </section>
+    <!-- Constraint-based end -->
+    <footer class="pb-16 text-sm leading-6">
+        <div class="max-w-7xl mx-auto divide-y divide-slate-200 px-4 sm:px-6 md:px-8 dark:divide-slate-700">
+            <div class="flex">
+                <div class="flex-none w-1/2 space-y-10 sm:space-y-8 lg:flex lg:space-y-0">
+                    <div class="lg:flex-none lg:w-1/2">
+                        <h2 class="font-semibold text-slate-900 dark:text-slate-100">Getting Started</h2>
+                        <ul class="mt-3 space-y-2 text-slate-400">
+                            <li>
+                                <a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/installation">Installation</a></li>
+                                <li>
+                                    <a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/editor-setup">Editor Setup</a></li>
+                                    <li>
+                                        <a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/using-with-preprocessors">Using with Preprocessors</a></li>
+                                        <li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/optimizing-for-production">Optimizing for Production</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/browser-support">Browser Support</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/upgrade-guide">Upgrade Guide</a></li></ul></div>
+                                        
+                                        <div class="lg:flex-none lg:w-1/2"><h2 class="font-semibold text-slate-900 dark:text-slate-100">Core Concepts</h2>
+                                            <ul class="mt-3 space-y-2 text-slate-400"><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/utility-first">Utility-First Fundamentals</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/hover-focus-and-other-states">Handling Hover, Focus, and Other States</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/responsive-design">Responsive Design</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/dark-mode">Dark Mode</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/reusing-styles">Reusing Styles</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/adding-custom-styles">Adding Custom Styles</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/functions-and-directives">Functions &amp; Directives</a></li></ul></div></div>
+                                            <div class="flex-none w-1/2 space-y-10 sm:space-y-8 lg:flex lg:space-y-0">
+                                                <div class="lg:flex-none lg:w-1/2"><h2 class="font-semibold text-slate-900 dark:text-slate-100">Customization</h2>
+                                                    <ul class="mt-3 space-y-2 text-slate-400"><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/configuration">Configuration</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/content-configuration">Content Configuration</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/theme">Theme Configuration</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/screens">Customizing Screens</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/customizing-colors">Customizing Colors</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/customizing-spacing">Customizing Spacing</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/plugins">Plugins</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/docs/presets">Presets</a></li></ul></div><div class="lg:flex-none lg:w-1/2"><h2 class="font-semibold text-slate-900 dark:text-slate-100">Community</h2>
+                                                        <ul class="mt-3 space-y-2 text-slate-400"><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="https://github.com/tailwindlabs/tailwindcss">GitHub</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="/discord">Discord</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="https://twitter.com/tailwindcss">Twitter</a></li><li><a class="hover:text-slate-900 dark:hover:text-slate-300" href="https://www.youtube.com/tailwindlabs">YouTube</a></li></ul></div></div></div><div class="mt-16 pt-10"><svg viewBox="0 0 248 31" class="text-slate-900 dark:text-white w-auto h-6"><path fill-rule="evenodd" clip-rule="evenodd" d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z" fill="#38bdf8"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M76.546 12.825h-4.453v8.567c0 2.285 1.508 2.249 4.453 2.106v3.463c-5.962.714-8.332-.928-8.332-5.569v-8.567H64.91V9.112h3.304V4.318l3.879-1.143v5.937h4.453v3.713zM93.52 9.112h3.878v17.849h-3.878v-2.57c-1.365 1.891-3.484 3.034-6.285 3.034-4.884 0-8.942-4.105-8.942-9.389 0-5.318 4.058-9.388 8.942-9.388 2.801 0 4.92 1.142 6.285 2.999V9.112zm-5.674 14.636c3.232 0 5.674-2.392 5.674-5.712s-2.442-5.711-5.674-5.711-5.674 2.392-5.674 5.711c0 3.32 2.442 5.712 5.674 5.712zm16.016-17.313c-1.364 0-2.477-1.142-2.477-2.463a2.475 2.475 0 012.477-2.463 2.475 2.475 0 012.478 2.463c0 1.32-1.113 2.463-2.478 2.463zm-1.939 20.526V9.112h3.879v17.849h-3.879zm8.368 0V.9h3.878v26.06h-3.878zm29.053-17.849h4.094l-5.638 17.849h-3.807l-3.735-12.03-3.771 12.03h-3.806l-5.639-17.849h4.094l3.484 12.315 3.771-12.315h3.699l3.734 12.315 3.52-12.315zm8.906-2.677c-1.365 0-2.478-1.142-2.478-2.463a2.475 2.475 0 012.478-2.463 2.475 2.475 0 012.478 2.463c0 1.32-1.113 2.463-2.478 2.463zm-1.939 20.526V9.112h3.878v17.849h-3.878zm17.812-18.313c4.022 0 6.895 2.713 6.895 7.354V26.96h-3.878V16.394c0-2.713-1.58-4.14-4.022-4.14-2.55 0-4.561 1.499-4.561 5.14v9.567h-3.879V9.112h3.879v2.285c1.185-1.856 3.124-2.749 5.566-2.749zm25.282-6.675h3.879V26.96h-3.879v-2.57c-1.364 1.892-3.483 3.034-6.284 3.034-4.884 0-8.942-4.105-8.942-9.389 0-5.318 4.058-9.388 8.942-9.388 2.801 0 4.92 1.142 6.284 2.999V1.973zm-5.674 21.775c3.232 0 5.674-2.392 5.674-5.712s-2.442-5.711-5.674-5.711-5.674 2.392-5.674 5.711c0 3.32 2.442 5.712 5.674 5.712zm22.553 3.677c-5.423 0-9.481-4.105-9.481-9.389 0-5.318 4.058-9.388 9.481-9.388 3.519 0 6.572 1.82 8.008 4.605l-3.34 1.928c-.79-1.678-2.549-2.749-4.704-2.749-3.16 0-5.566 2.392-5.566 5.604 0 3.213 2.406 5.605 5.566 5.605 2.155 0 3.914-1.107 4.776-2.749l3.34 1.892c-1.508 2.82-4.561 4.64-8.08 4.64zm14.472-13.387c0 3.249 9.661 1.285 9.661 7.89 0 3.57-3.125 5.497-7.003 5.497-3.591 0-6.177-1.607-7.326-4.177l3.34-1.927c.574 1.606 2.011 2.57 3.986 2.57 1.724 0 3.052-.571 3.052-2 0-3.176-9.66-1.391-9.66-7.781 0-3.356 2.909-5.462 6.572-5.462 2.945 0 5.387 1.357 6.644 3.713l-3.268 1.82c-.647-1.392-1.904-2.035-3.376-2.035-1.401 0-2.622.607-2.622 1.892zm16.556 0c0 3.249 9.66 1.285 9.66 7.89 0 3.57-3.124 5.497-7.003 5.497-3.591 0-6.176-1.607-7.326-4.177l3.34-1.927c.575 1.606 2.011 2.57 3.986 2.57 1.724 0 3.053-.571 3.053-2 0-3.176-9.66-1.391-9.66-7.781 0-3.356 2.908-5.462 6.572-5.462 2.944 0 5.386 1.357 6.643 3.713l-3.268 1.82c-.646-1.392-1.903-2.035-3.375-2.035-1.401 0-2.622.607-2.622 1.892z" fill="currentColor"></path></svg></div></div></footer>
+</body>
+</html>

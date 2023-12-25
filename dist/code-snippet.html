@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Editor</title>
+  <link href="https://cdn.jsdelivr.net/npm/ace-builds@1.32.2/css/ace.min.css" rel="stylesheet">
+  <style type="text/css" media="screen">
+    body {
+        overflow: hidden;
+    }
+
+    #editor {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+  </style>
+</head>
+<body>
+
+<pre id="editor">
+    <code>
+    &lt;figure class=&quot;md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800&quot;&gt;
+        &lt;img class=&quot;w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto&quot; src=&quot;/sarah-dayan.jpg&quot; alt=&quot;&quot; width=&quot;384&quot; height=&quot;512&quot;&gt;
+            &lt;div class=&quot;pt-6 md:p-8 text-center md:text-left space-y-4&quot;&gt;
+                &lt;blockquote&gt;
+                &lt;p class=&quot;text-lg font-medium&quot;&gt;
+                    &ldquo;Tailwind CSS is the only framework that I've seen scale
+                    on large teams. It&rsquo;s easy to customize, adapts to any design,
+                    and the build size is tiny.&rdquo;
+                &lt;/p&gt;
+                &lt;/blockquote&gt;
+                &lt;figcaption class=&quot;font-medium&quot;&gt;
+                &lt;div class=&quot;text-sky-500 dark:text-sky-400&quot;&gt;
+                    Sarah Dayan
+                &lt;/div&gt;
+                &lt;div class=&quot;text-slate-700 dark:text-slate-500&quot;&gt;
+                    Staff Engineer, Algolia
+                &lt;/div&gt;
+                &lt;/figcaption&gt;
+            &lt;/div&gt;
+    &lt;/figure&gt;
+    </code>
+</pre>
+
+<script src="https://cdn.jsdelivr.net/npm/ace-builds@1.32.2/src-min-noconflict/ace.min.js"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/twilight");
+    editor.session.setMode("ace/mode/html");
+</script>
+
+</body>
+</html>
